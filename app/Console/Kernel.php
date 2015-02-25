@@ -1,17 +1,20 @@
-<?php namespace App\Console;
+<?php
 
-use Illuminate\Console\Scheduling\Schedule;
-use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+	namespace App\Console;
 
-class Kernel extends ConsoleKernel {
+	use Illuminate\Console\Scheduling\Schedule;
+	use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
-	/**
-	 * The Artisan commands provided by your application.
-	 *
-	 * @var array
-	 */
-	protected $commands = [
-		'App\console\Commands\Dbcount',
-	];
+	class Kernel extends ConsoleKernel {
 
-}
+		/**
+		 * The Artisan commands provided by your application.
+		 *
+		 * @var array
+		 */
+		protected $commands = [
+			// Database commands
+			'App\console\Commands\Dbcount',
+		];
+
+	}
